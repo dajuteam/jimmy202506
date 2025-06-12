@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水湳土地</title>
+      <meta name="robots" content="noindex, nofollow">
+    <style>
+
+        *{
+            
+        box-sizing: border-box;
+        }
+        /* 預設全站容器設定 */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,h2{
+            text-align: center;
+           
+        }
+
+        h2{
+            font-size: 3em;
+        }
+
+        .no12h2{
+
+            color: rgb(154, 0, 113);
+        }
+
+        .no8h2{
+            color: rgb(1, 1, 110);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+            /* 預留手機內距 */
+        }
+
+        /* 預設為手機版優先 */
+        .view {
+            display: grid;
+            grid-template-columns: 1fr; /* 手機版顯示為一欄 */
+            grid-template-rows: auto auto auto auto; /* 上下排列 */
+            width: 100%;
+            max-width: 1200px; /* 置中，最大寬度1200px */
+            height: auto;
+            border: 2px solid black;
+            margin: 50px auto;
+        }
+
+        .cell {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            /* 垂直排列 */
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        /* 圖片樣式 */
+        .cell img {
+            max-width: 100%; /* 確保圖片不會超出容器寬度 */
+            height: auto;
+            margin-bottom: 10px;
+            /* 圖片和標題之間的間距 */
+        }
+
+        /* 設定四個區塊的內容 */
+        .north {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .east {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .west {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        .south {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+
+
+        .airview{
+            width: 100%;
+            height: 500px;
+        }
+
+
+         .nav {
+      display: flex;
+      justify-content: space-between; /* 水平排列 */
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    /* 設定按鈕 */
+    .nav li {
+      list-style: none;
+      width: 48%; /* 每個按鈕佔50%寬度，給些間隙 */
+    }
+
+    .nav a {
+        font-size: 1.3em;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+      width: 100%; /* 按鈕寬度占滿各自的容器 */
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav a:hover {
+      background-color: #45a049; /* 鼠標懸停顏色 */
+    }
+
+    hr{
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+        /* 電腦版樣式：當寬度大於 992px 時 */
+        @media (min-width: 992px) {
+            .view {
+                grid-template-columns: 1fr 1fr; /* 兩欄排版 */
+                grid-template-rows: auto auto;
+                height: auto; /* 高度自動調整 */
+            }
+
+            /* 四個區塊的內容 */
+            .north {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            .east {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .west {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            .south {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+
+
+            
+        .airview{
+            width: 100%;
+            height: 800px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>水湳土地標售</h1>
+        <ul class="nav">
+            <li><a href="#no8">地號8</a></li>
+            <li><a href="#no12">地號12</a></li>
+        </ul>
+        <img src="images/sn0626sell.jpg" alt="">
+        <img src="images/sn0626sell-real.jpg" alt="">
+
+        <h2 id="no8" class="no8h2">地號8 實景</h2>
+
+        <div class="view">
+            <div class="cell north">
+                <h4>地號8 北側 | 高度20M </h4>
+                <img src="images/no8-20m-north.jpg" alt="">
+            </div>
+            <div class="cell east">
+                <h4>地號8 東側 | 高度20M </h4>
+                <img src="images/no8-20m-east.jpg" alt="">
+            </div>
+            <div class="cell west">
+                <h4>地號8 西側 | 高度20M </h4>
+                <img src="images/no8-20m-west.jpg" alt="">
+            </div>
+            <div class="cell south">
+                <h4>地號8 南側 | 高度20M </h4>
+                <img src="images/no8-20m-south.jpg" alt="">
+            </div>
+        </div>
+
+
+
+        <h2 class="no8h2">地號8 VR720環景  高度 6M｜30M｜50M</h2>
+        <div><iframe class="airview" src="https://www.qwhouse720.com/tour/f52340ee01106e91" frameborder="no"  ></iframe></div>
+
+        <hr>
+
+        <h2 id="no12" class="no12h2">地號12 實景</h2>
+        
+        <div class="view">
+            <div class="cell north">
+                <h4>地號12 北側</h4>
+                <img src="images/no12-20m-north.jpg" alt="">
+            </div>
+            <div class="cell east">
+                <h4>地號12 東側</h4>
+                <img src="images/no12-20m-east.jpg" alt="">
+            </div>
+            <div class="cell west">
+                <h4>地號12 西側</h4>
+                <img src="images/no12-20m-west.jpg" alt="">
+            </div>
+            <div class="cell south">
+                <h4>地號12 南側</h4>
+                <img src="images/no12-20m-south.jpg" alt="">
+            </div>
+        </div>
+
+
+
+         <h2 class="no12h2">地號12 VR720環景  高度 6M｜30M｜50M</h2>
+
+
+         <div>
+            <iframe  class="airview"  src="https://www.qwhouse720.com/tour/d473c6a6067099ee" frameborder="no"  ></iframe>
+         </div>
+    </div>
+</body>
+
+</html>
